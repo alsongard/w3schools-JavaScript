@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <h2>What can javascript do?</h2>
+        <p id="demo">Java script can change html content.</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello Javascript!"'>Click me</button>
+
+        <p id="firstName">Gard</p>
+        <button type="button" onclick='document.getElementById("firstName").innerHTML = "Alson Safari"'>Click me to change name.</button>
+        
+        <p id="bestMusic">Polo g is my favourite artist</p>
+        <p>click the button below to see favourite song</p>
+        <button type="button" onclick='document.getElementById("bestMusic").innerHTML = "My favourite song is Parin Ways"'>Click</button>
+
+        <h2>Javascript can also change the attribute of html elements</h2>
+        <p>We will change the src attribute of the img tag.</p>
+        <img  id="img-demo" src="./images/backiee-25880-landscape.jpg" style="width: 100px; height: 100px;">
+        <button type="button" onclick='document.getElementById("img-demo").src="./images/backiee-26283-landscape.jpg" '>Click me To change Image</button>
+
+        <p>Another Example on changing the image</p>
+        <div>
+            <img id="img-demo1" src="./images/backiee-19777-landscape.jpg" style="background-size:cover; background-position:center; width:400px; height: auto;">
+            <button type="button" onclick='document.getElementById("img-demo1").src="./images/backiee-20410-landscape.jpg"'>Click me to change image</button>
+        </div>
+    </body>
+</html>
