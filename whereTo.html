@@ -23,9 +23,18 @@
         <p>another example</p>
         <p id="demo3"></p>
 
+        <h6>Another example</h6>
+        <p id="demo4"></p>
+
+        <h6></h6>
+        <p id="demo5"></p>
+
         <button onclick="printPage()">Print Page</button>
         <script>
             document.getElementById("demo").innerHTML = "Welcome Back To Javascript Tutorials.";
+            alert("Welcome");
+            document.getElementById("demo4").innerHTML = "Hello Dolly!";
+            console.log("Used for debugging purposes.");
 
             function myFunction(){
                 document.getElementById("demo1").innerHTML = "I have changed.";   
@@ -41,9 +50,6 @@
             function alarm(){
                 window.alert("Continue !!!!!!!!!!!!!!!");
             }
-            alert("Welcome");
-
-            console.log("Used for debugging purposes.")
 
             function printPage(){
                 print()
