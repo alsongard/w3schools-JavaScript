@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle ClassList</title>
+    <style>
+        .myStyle{
+            padding:20px;
+            background: linear-gradient(to right,rgb(207, 122, 122), rgb(111, 111, 238));
+        }
+        button{
+            width:100px;
+            margin:10px auto;
+        }
+    </style>
+</head>
+<body>
+    <ul class="myList" >
+        <li>REACT</li>
+        <li>CYBER SEC</li>
+        <li>NEXT JS</li>
+        <li>MONGO DB</li>
+        <li>TRYHACKME</li>
+        <li>BANDIT</li>
+    </ul>
+    <button id="myBtn">Click Me</button>
+    <script>
+        let myButton = document.getElementById("myBtn");
+        let myList = document.querySelector(".myList");
+
+        myButton.addEventListener("click", ()=>{
+            const newList = myList.classList
+            newList.toggle("myStyle");
+
+        })
+    </script>
+</body>
+</html>
