@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing styles</title>
+    <style>
+
+        .myList{
+            list-style-type: decimal;
+            padding:50px;
+            background-color: aquamarine;
+            width: 200px;
+            margin:20px auto 0;
+            text-align: justify;
+        }
+        div{
+            margin:20px auto; 
+            width:100px;           
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="myList">
+        <li>Software developer</li>
+        <li>Programming love</li>
+        <li>Back-end developer</li>
+        <li>front-end Developer</li>
+        <li>Cyber sec</li>
+    </ul>
+    <div><button id="myBtn">Click Me</button></div>
+    <script>
+        let myList = document.querySelector(".myList");
+        let myButton = document.getElementById("myBtn");
+        myButton.addEventListener("click", () => {
+            const newList = myList.classList;
+            newList.remove("myList");
+
+        })
+    </script>
+</body>
+</html>
