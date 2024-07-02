@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassList</title>
+    <style>
+        *{
+            margin:0;
+        }
+        body{
+            text-align: center;
+        }
+        .myList{
+            background-color: red;
+            width:200px;
+            text-align: center;
+            margin:20px auto;
+            list-style-type: decimal;
+        }
+        .new-list-style{
+            padding:20px;
+            border:3px solid black;
+            background: linear-gradient(to right,rgb(211, 65, 65), rgb(27, 27, 219));
+
+        }
+    </style>
+</head>
+<body>
+    <h1>ClassList</h1>
+    <p>Press the following button to change style of list</p>
+    <ul class="myList">
+        <li>Tems</li>
+        <li>Oceans</li>
+        <li>Ryan Oakes</li>
+        <li>Qing Madi</li>
+    </ul>
+    <button id="myBtn">Click Me</button>
+    <script>
+        let myList = document.querySelector(".myList");
+        let myButton = document.getElementById("myBtn");
+        function myFunc(){
+            const newList = myList.classList;
+            newList.add("new-list-style");
+        }
+        myButton.addEventListener("click", myFunc)
+
+    </script>
+</body>
+</html>
